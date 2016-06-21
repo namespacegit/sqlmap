@@ -342,8 +342,8 @@ def error500(error=None):
 
 
 # Users' methods
-@get("/task/new")
-def task_new():
+@get("/task/<passwd>/new")
+def task_new(passwd):
     """
     Create new task ID
     """
