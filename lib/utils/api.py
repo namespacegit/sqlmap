@@ -347,13 +347,16 @@ def task_new():
     """
     Create new task ID
     """
-    taskid = hexencode(os.urandom(8))
-    remote_addr = request.remote_addr
+    if passwd == "jaxapi":
+        taskid = hexencode(os.urandom(8))
+        remote_addr = request.remote_addr
+        DataStore.tasks[taskid] = Task(taskid, remote_addr)
 
-    DataStore.tasks[taskid] = Task(taskid, remote_addr)
-
-    logger.debug("Created new task: '%s'" % taskid)
-    return jsonize({"success": True, "taskid": taskid})
+        logger.debug("Created new task: '%s'" % taskid)
+        return jsonize({"success": True, "taskid": taskid})
+    else:
+        logger.debug("Someone attacked")
+        return jsonize({"success": False, "tips": "please stop attack,or i will find you!!!"})
 
 
 @get("/task/<taskid>/delete")
