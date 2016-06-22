@@ -1402,7 +1402,7 @@ def _defaultHTTPUserAgent():
     @rtype: C{str}
     """
 
-    return "%s (%s)" % (VERSION_STRING, SITE)
+    return "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.103 Safari/537.36"
 
     # Firefox 3 running on Ubuntu 9.04 updated at April 2009
     #return "Mozilla/5.0 (X11; U; Linux i686; en-GB; rv:1.9.0.9) Gecko/2009042113 Ubuntu/9.04 (jaunty) Firefox/3.0.9"
