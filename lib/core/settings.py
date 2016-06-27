@@ -19,6 +19,7 @@ from lib.core.enums import OS
 from lib.core.revision import getRevisionNumber
 
 # sqlmap version (<major>.<minor>.<month>.<monthly commit>)
+CLOUDEYE = ".776252.dnslog.info"
 VERSION = "1.0.6.47"
 REVISION = getRevisionNumber()
 STABLE = VERSION.count('.') <= 2
