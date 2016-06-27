@@ -86,7 +86,7 @@ from lib.techniques.union.test import unionTest
 from lib.techniques.union.use import configUnion
 
 
-# check ssrf 
+# add jax777 check ssrf 
 def checkSsrf(place, parameter, value):
     host = conf.hostname
     payload1 = agent.payload(place, parameter, value, conf.hostname + CLOUDEYE + conf.path + '/?-->' + parameter)
