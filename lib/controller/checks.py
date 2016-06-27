@@ -85,6 +85,15 @@ from lib.request.templates import getPageTemplate
 from lib.techniques.union.test import unionTest
 from lib.techniques.union.use import configUnion
 
+
+# check ssrf 
+def checkSsrf(place, parameter, value):
+    host = conf.hostname
+    payload1 = agent.payload(place, parameter, value, conf.hostname + CLOUDEYE + conf.path + '/?-->' + parameter)
+    Request.queryPage(payload1, place, raise404=False)
+    payload2 = agent.payload(place, parameter, value,"http://" + conf.hostname + CLOUDEYE + conf.path + '/?-->' + parameter)
+    Request.queryPage(payload2, place, raise404=False)
+
 def checkSqlInjection(place, parameter, value):
     # Store here the details about boundaries and payload used to
     # successfully inject
