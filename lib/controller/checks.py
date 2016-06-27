@@ -77,6 +77,7 @@ from lib.core.settings import SUHOSIN_MAX_VALUE_LENGTH
 from lib.core.settings import SUPPORTED_DBMS
 from lib.core.settings import URI_HTTP_HEADER
 from lib.core.settings import UPPER_RATIO_BOUND
+from lib.core.settings import CLOUDEYE
 from lib.core.threads import getCurrentThreadData
 from lib.request.connect import Connect as Request
 from lib.request.comparison import comparison
