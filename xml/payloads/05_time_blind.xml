@@ -45,7 +45,7 @@
     <test>
         <title>MySQL &gt;= 5.0.12 AND time-based blind (comment)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>3</level>
         <risk>1</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -66,7 +66,7 @@
     <test>
         <title>MySQL &gt;= 5.0.12 OR time-based blind (comment)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>3</level>
         <risk>3</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -87,7 +87,7 @@
     <test>
         <title>MySQL &lt;= 5.0.11 AND time-based blind (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>2</level>
         <risk>2</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -107,7 +107,7 @@
     <test>
         <title>MySQL &lt;= 5.0.11 OR time-based blind (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>2</level>
         <risk>3</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -127,7 +127,7 @@
     <test>
         <title>MySQL &lt;= 5.0.11 AND time-based blind (heavy query - comment)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>5</level>
         <risk>2</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -148,7 +148,7 @@
     <test>
         <title>MySQL &lt;= 5.0.11 OR time-based blind (heavy query - comment)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>5</level>
         <risk>3</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -169,7 +169,7 @@
     <test>
         <title>MySQL &gt;= 5.0.12 RLIKE time-based blind</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>2</level>
         <risk>1</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -189,7 +189,7 @@
     <test>
         <title>MySQL &gt;= 5.0.12 RLIKE time-based blind (comment)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>4</level>
         <risk>1</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -210,7 +210,7 @@
     <test>
         <title>MySQL AND time-based blind (ELT)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>3</level>
         <risk>1</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -230,7 +230,7 @@
     <test>
         <title>MySQL OR time-based blind (ELT)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>3</level>
         <risk>3</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -249,7 +249,7 @@
     <test>
         <title>MySQL AND time-based blind (ELT - comment)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>5</level>
         <risk>1</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -269,7 +269,7 @@
     <test>
         <title>MySQL OR time-based blind (ELT - comment)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>5</level>
         <risk>3</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -329,7 +329,7 @@
     <test>
         <title>PostgreSQL &gt; 8.1 AND time-based blind (comment)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>4</level>
         <risk>1</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -350,7 +350,7 @@
     <test>
         <title>PostgreSQL &gt; 8.1 OR time-based blind (comment)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>4</level>
         <risk>3</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -371,7 +371,7 @@
     <test>
         <title>PostgreSQL AND time-based blind (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>2</level>
         <risk>2</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -390,7 +390,7 @@
     <test>
         <title>PostgreSQL OR time-based blind (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>2</level>
         <risk>3</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -409,7 +409,7 @@
     <test>
         <title>PostgreSQL AND time-based blind (heavy query - comment)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>5</level>
         <risk>2</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -429,7 +429,7 @@
     <test>
         <title>PostgreSQL OR time-based blind (heavy query - comment)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>5</level>
         <risk>3</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -470,7 +470,7 @@
     <test>
         <title>Microsoft SQL Server/Sybase time-based blind (comment)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>4</level>
         <risk>1</risk>
         <clause>0</clause>
         <where>1</where>
@@ -492,7 +492,7 @@
     <test>
         <title>Microsoft SQL Server/Sybase AND time-based blind (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>2</level>
         <risk>2</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -513,7 +513,7 @@
     <test>
         <title>Microsoft SQL Server/Sybase OR time-based blind (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>2</level>
         <risk>3</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -534,7 +534,7 @@
     <test>
         <title>Microsoft SQL Server/Sybase AND time-based blind (heavy query - comment)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>5</level>
         <risk>2</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -556,7 +556,7 @@
     <test>
         <title>Microsoft SQL Server/Sybase OR time-based blind (heavy query - comment)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>5</level>
         <risk>3</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -616,7 +616,7 @@
     <test>
         <title>Oracle AND time-based blind (comment)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>4</level>
         <risk>1</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -636,7 +636,7 @@
     <test>
         <title>Oracle OR time-based blind (comment)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>4</level>
         <risk>3</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -656,7 +656,7 @@
     <test>
         <title>Oracle AND time-based blind (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>2</level>
         <risk>2</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -675,7 +675,7 @@
     <test>
         <title>Oracle OR time-based blind (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>2</level>
         <risk>3</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -694,7 +694,7 @@
     <test>
         <title>Oracle AND time-based blind (heavy query - comment)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>5</level>
         <risk>2</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -714,7 +714,7 @@
     <test>
         <title>Oracle OR time-based blind (heavy query - comment)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>5</level>
         <risk>3</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -734,7 +734,7 @@
     <test>
         <title>IBM DB2 AND time-based blind (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>3</level>
         <risk>2</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -753,7 +753,7 @@
     <test>
         <title>IBM DB2 OR time-based blind (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>3</level>
         <risk>3</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -772,7 +772,7 @@
     <test>
         <title>IBM DB2 AND time-based blind (heavy query - comment)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>5</level>
         <risk>2</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -792,7 +792,7 @@
     <test>
         <title>IBM DB2 OR time-based blind (heavy query - comment)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>5</level>
         <risk>3</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -812,7 +812,7 @@
     <test>
         <title>SQLite &gt; 2.0 AND time-based blind (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>3</level>
         <risk>2</risk>
         <clause>1,9</clause>
         <where>1</where>
@@ -832,7 +832,7 @@
     <test>
         <title>SQLite &gt; 2.0 OR time-based blind (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>3</level>
         <risk>3</risk>
         <clause>1,9</clause>
         <where>1</where>
@@ -852,7 +852,7 @@
     <test>
         <title>SQLite &gt; 2.0 AND time-based blind (heavy query - comment)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>5</level>
         <risk>2</risk>
         <clause>1,9</clause>
         <where>1</where>
@@ -873,7 +873,7 @@
     <test>
         <title>SQLite &gt; 2.0 OR time-based blind (heavy query - comment)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>5</level>
         <risk>3</risk>
         <clause>1,9</clause>
         <where>1</where>
@@ -894,7 +894,7 @@
     <test>
         <title>Firebird &gt;= 2.0 AND time-based blind (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>4</level>
         <risk>2</risk>
         <clause>1,9</clause>
         <where>1</where>
@@ -914,7 +914,7 @@
     <test>
         <title>Firebird &gt;= 2.0 OR time-based blind (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>4</level>
         <risk>3</risk>
         <clause>1,9</clause>
         <where>1</where>
@@ -934,7 +934,7 @@
     <test>
         <title>Firebird &gt;= 2.0 AND time-based blind (heavy query - comment)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>5</level>
         <risk>2</risk>
         <clause>1,9</clause>
         <where>1</where>
@@ -955,7 +955,7 @@
     <test>
         <title>Firebird &gt;= 2.0 OR time-based blind (heavy query - comment)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>5</level>
         <risk>3</risk>
         <clause>1,9</clause>
         <where>1</where>
@@ -976,7 +976,7 @@
     <test>
         <title>SAP MaxDB AND time-based blind (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>4</level>
         <risk>2</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -995,7 +995,7 @@
     <test>
         <title>SAP MaxDB OR time-based blind (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>4</level>
         <risk>3</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -1014,7 +1014,7 @@
     <test>
         <title>SAP MaxDB AND time-based blind (heavy query - comment)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>5</level>
         <risk>2</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -1034,7 +1034,7 @@
     <test>
         <title>SAP MaxDB OR time-based blind (heavy query - comment)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>5</level>
         <risk>3</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -1054,7 +1054,7 @@
     <test>
         <title>HSQLDB &gt;= 1.7.2 AND time-based blind (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>4</level>
         <risk>2</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -1074,7 +1074,7 @@
     <test>
         <title>HSQLDB &gt;= 1.7.2 OR time-based blind (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>4</level>
         <risk>3</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -1094,7 +1094,7 @@
     <test>
         <title>HSQLDB &gt;= 1.7.2 AND time-based blind (heavy query - comment)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>5</level>
         <risk>2</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -1115,7 +1115,7 @@
     <test>
         <title>HSQLDB &gt;= 1.7.2 OR time-based blind (heavy query - comment)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>5</level>
         <risk>3</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -1136,7 +1136,7 @@
     <test>
         <title>HSQLDB &gt; 2.0 AND time-based blind (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>4</level>
         <risk>2</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -1156,7 +1156,7 @@
     <test>
         <title>HSQLDB &gt; 2.0 OR time-based blind (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>4</level>
         <risk>3</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -1176,7 +1176,7 @@
     <test>
         <title>HSQLDB &gt; 2.0 AND time-based blind (heavy query - comment)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>5</level>
         <risk>2</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -1197,7 +1197,7 @@
     <test>
         <title>HSQLDB &gt; 2.0 OR time-based blind (heavy query - comment)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>5</level>
         <risk>3</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -1222,7 +1222,7 @@
     <test>
         <title>MySQL &gt;= 5.1 time-based blind (heavy query) - PROCEDURE ANALYSE (EXTRACTVALUE)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>3</level>
         <risk>2</risk>
         <clause>1,2,3,4,5</clause>
         <where>1</where>
@@ -1242,7 +1242,7 @@
     <test>
         <title>MySQL &gt;= 5.1 time-based blind (heavy query - comment) - PROCEDURE ANALYSE (EXTRACTVALUE)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>5</level>
         <risk>2</risk>
         <clause>1,2,3,4,5</clause>
         <where>1</where>
@@ -1265,7 +1265,7 @@
     <test>
         <title>MySQL &gt;= 5.0.12 time-based blind - Parameter replace</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>2</level>
         <risk>1</risk>
         <clause>1,2,3,9</clause>
         <where>3</where>
@@ -1285,7 +1285,7 @@
     <test>
         <title>MySQL &gt;= 5.0.12 time-based blind - Parameter replace (substraction)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>3</level>
         <risk>1</risk>
         <clause>1,2,3,9</clause>
         <where>3</where>
@@ -1305,7 +1305,7 @@
     <test>
         <title>MySQL &lt;= 5.0.11 time-based blind - Parameter replace (heavy queries)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>4</level>
         <risk>2</risk>
         <clause>1,2,3,9</clause>
         <where>3</where>
@@ -1325,7 +1325,7 @@
     <test>
         <title>MySQL time-based blind - Parameter replace (bool)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>4</level>
         <risk>1</risk>
         <clause>1,2,3,9</clause>
         <where>3</where>
@@ -1344,7 +1344,7 @@
     <test>
         <title>MySQL time-based blind - Parameter replace (ELT)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>5</level>
         <risk>1</risk>
         <clause>1,2,3,9</clause>
         <where>3</where>
@@ -1363,7 +1363,7 @@
     <test>
         <title>MySQL time-based blind - Parameter replace (MAKE_SET)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>5</level>
         <risk>1</risk>
         <clause>1,2,3,9</clause>
         <where>3</where>
@@ -1382,7 +1382,7 @@
     <test>
         <title>PostgreSQL &gt; 8.1 time-based blind - Parameter replace</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>3</level>
         <risk>1</risk>
         <clause>1,2,3,9</clause>
         <where>3</where>
@@ -1402,7 +1402,7 @@
     <test>
         <title>PostgreSQL time-based blind - Parameter replace (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>4</level>
         <risk>2</risk>
         <clause>1,2,3,9</clause>
         <where>3</where>
@@ -1421,7 +1421,7 @@
     <test>
         <title>Microsoft SQL Server/Sybase time-based blind - Parameter replace (heavy queries)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>4</level>
         <risk>2</risk>
         <clause>1,3,9</clause>
         <where>3</where>
@@ -1443,7 +1443,7 @@
     <test>
         <title>Oracle time-based blind - Parameter replace (DBMS_LOCK.SLEEP)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>3</level>
         <risk>1</risk>
         <clause>1,3,9</clause>
         <where>3</where>
@@ -1462,7 +1462,7 @@
     <test>
         <title>Oracle time-based blind - Parameter replace (DBMS_PIPE.RECEIVE_MESSAGE)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>3</level>
         <risk>1</risk>
         <clause>1,3,9</clause>
         <where>3</where>
@@ -1481,7 +1481,7 @@
     <test>
         <title>Oracle time-based blind - Parameter replace (heavy queries)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>4</level>
         <risk>2</risk>
         <clause>1,3,9</clause>
         <where>3</where>
@@ -1500,7 +1500,7 @@
     <test>
         <title>SQLite &gt; 2.0 time-based blind - Parameter replace (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>4</level>
         <risk>2</risk>
         <clause>1,2,3,9</clause>
         <where>3</where>
@@ -1520,7 +1520,7 @@
     <test>
         <title>Firebird time-based blind - Parameter replace (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>5</level>
         <risk>2</risk>
         <clause>1,2,3,9</clause>
         <where>3</where>
@@ -1540,7 +1540,7 @@
     <test>
         <title>SAP MaxDB time-based blind - Parameter replace (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>5</level>
         <risk>2</risk>
         <clause>1,3,9</clause>
         <where>3</where>
@@ -1559,7 +1559,7 @@
     <test>
         <title>IBM DB2 time-based blind - Parameter replace (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>5</level>
         <risk>2</risk>
         <clause>1,2,3,9</clause>
         <where>3</where>
@@ -1579,7 +1579,7 @@
     <test>
         <title>HSQLDB &gt;= 1.7.2 time-based blind - Parameter replace (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>4</level>
         <risk>2</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -1599,7 +1599,7 @@
     <test>
         <title>HSQLDB &gt; 2.0 time-based blind - Parameter replace (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>5</level>
         <risk>2</risk>
         <clause>1,2,3,9</clause>
         <where>1</where>
@@ -1621,7 +1621,7 @@
     <test>
         <title>MySQL &gt;= 5.0.12 time-based blind - ORDER BY, GROUP BY clause</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>3</level>
         <risk>1</risk>
         <clause>2,3</clause>
         <where>1</where>
@@ -1641,7 +1641,7 @@
     <test>
         <title>MySQL &lt;= 5.0.11 time-based blind - ORDER BY, GROUP BY clause (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>4</level>
         <risk>2</risk>
         <clause>2,3</clause>
         <where>1</where>
@@ -1661,7 +1661,7 @@
     <test>
         <title>PostgreSQL &gt; 8.1 time-based blind - ORDER BY, GROUP BY clause</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>3</level>
         <risk>1</risk>
         <clause>2,3</clause>
         <where>1</where>
@@ -1681,7 +1681,7 @@
     <test>
         <title>PostgreSQL time-based blind - ORDER BY, GROUP BY clause (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>4</level>
         <risk>2</risk>
         <clause>2,3</clause>
         <where>1</where>
@@ -1700,7 +1700,7 @@
     <test>
         <title>Microsoft SQL Server/Sybase time-based blind - ORDER BY clause (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>4</level>
         <risk>2</risk>
         <clause>2,3</clause>
         <where>1</where>
@@ -1721,7 +1721,7 @@
     <test>
         <title>Oracle time-based blind - ORDER BY, GROUP BY clause (DBMS_LOCK.SLEEP)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>3</level>
         <risk>1</risk>
         <clause>2,3</clause>
         <where>1</where>
@@ -1740,7 +1740,7 @@
     <test>
         <title>Oracle time-based blind - ORDER BY, GROUP BY clause (DBMS_PIPE.RECEIVE_MESSAGE)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>3</level>
         <risk>1</risk>
         <clause>2,3</clause>
         <where>1</where>
@@ -1759,7 +1759,7 @@
     <test>
         <title>Oracle time-based blind - ORDER BY, GROUP BY clause (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>4</level>
         <risk>2</risk>
         <clause>2,3</clause>
         <where>1</where>
@@ -1778,7 +1778,7 @@
     <test>
         <title>HSQLDB &gt;= 1.7.2 time-based blind - ORDER BY, GROUP BY clause (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>4</level>
         <risk>2</risk>
         <clause>2,3</clause>
         <where>1</where>
@@ -1799,7 +1799,7 @@
     <test>
         <title>HSQLDB &gt; 2.0 time-based blind - ORDER BY, GROUP BY clause (heavy query)</title>
         <stype>5</stype>
-        <level>1</level>
+        <level>4</level>
         <risk>2</risk>
         <clause>2,3</clause>
         <where>1</where>
