@@ -68,7 +68,7 @@
     <test>
         <title>Oracle inline queries</title>
         <stype>3</stype>
-        <level>1</level>
+        <level>2</level>
         <risk>1</risk>
         <clause>1,2,3,8</clause>
         <where>3</where>
@@ -87,7 +87,7 @@
     <test>
         <title>SQLite inline queries</title>
         <stype>3</stype>
-        <level>1</level>
+        <level>3</level>
         <risk>1</risk>
         <clause>1,2,3,8</clause>
         <where>3</where>
@@ -106,7 +106,7 @@
     <test>
         <title>Firebird inline queries</title>
         <stype>3</stype>
-        <level>1</level>
+        <level>3</level>
         <risk>1</risk>
         <clause>1,2,3,8</clause>
         <where>3</where>
