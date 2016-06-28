@@ -76,7 +76,7 @@ Formats:
 <root>
     <!-- Generic boundaries -->
     <boundary>
-        <level>1</level>
+        <level>3</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>1</ptype>
@@ -85,7 +85,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>4</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>2</ptype>
@@ -94,7 +94,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>3</level>
         <clause>1,2,3</clause>
         <where>1,2</where>
         <ptype>2</ptype>
@@ -103,7 +103,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>5</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>4</ptype>
@@ -123,7 +123,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>2</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>1</ptype>
@@ -132,7 +132,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>3</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>1</ptype>
@@ -159,7 +159,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>2</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>2</ptype>
@@ -168,7 +168,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>3</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>2</ptype>
@@ -186,7 +186,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>2</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>3</ptype>
@@ -195,7 +195,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>3</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>3</ptype>
@@ -204,7 +204,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>4</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>3</ptype>
@@ -213,7 +213,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>2</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>3</ptype>
@@ -222,7 +222,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>2</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>4</ptype>
@@ -231,7 +231,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>3</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>4</ptype>
@@ -240,7 +240,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>4</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>4</ptype>
@@ -249,7 +249,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>2</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>4</ptype>
@@ -258,7 +258,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>3</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>5</ptype>
@@ -267,7 +267,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>4</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>5</ptype>
@@ -276,7 +276,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>5</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>5</ptype>
@@ -285,7 +285,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>3</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>5</ptype>
@@ -294,7 +294,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>2</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>2</ptype>
@@ -303,7 +303,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>3</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>2</ptype>
@@ -312,7 +312,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>4</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>2</ptype>
@@ -330,7 +330,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>4</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>2</ptype>
@@ -339,7 +339,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>5</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>2</ptype>
@@ -348,7 +348,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>5</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>2</ptype>
@@ -357,7 +357,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>3</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>2</ptype>
@@ -369,49 +369,13 @@ Formats:
         <level>1</level>
         <clause>1</clause>
         <where>1,2</where>
-        <ptype>2</ptype>
-        <prefix>%00')</prefix>
-        <suffix> AND ('[RANDSTR]'='[RANDSTR]</suffix>
-    </boundary>
-
-    <boundary>
-        <level>1</level>
-        <clause>1</clause>
-        <where>1,2</where>
-        <ptype>2</ptype>
-        <prefix>%00'))</prefix>
-        <suffix> AND (('[RANDSTR]'='[RANDSTR]</suffix>
-    </boundary>
-
-    <boundary>
-        <level>1</level>
-        <clause>1</clause>
-        <where>1,2</where>
-        <ptype>2</ptype>
-        <prefix>%00')))</prefix>
-        <suffix> AND ((('[RANDSTR]'='[RANDSTR]</suffix>
-    </boundary>
-
-    <boundary>
-        <level>1</level>
-        <clause>1</clause>
-        <where>1,2</where>
-        <ptype>2</ptype>
-        <prefix>%00'</prefix>
-        <suffix> AND '[RANDSTR]'='[RANDSTR]</suffix>
-    </boundary>
-
-    <boundary>
-        <level>1</level>
-        <clause>1</clause>
-        <where>1,2</where>
         <ptype>1</ptype>
         <prefix></prefix>
         <suffix>[GENERIC_SQL_COMMENT]</suffix>
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>3</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>1</ptype>
@@ -422,7 +386,7 @@ Formats:
 
     <!-- Pre-WHERE generic boundaries (e.g. "UPDATE table SET '$_REQUEST["name"]' WHERE id=1" or "INSERT INTO table VALUES('$_REQUEST["value"]') WHERE id=1)"-->
     <boundary>
-        <level>1</level>
+        <level>5</level>
         <clause>9</clause>
         <where>1,2</where>
         <ptype>2</ptype>
@@ -431,7 +395,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>5</level>
         <clause>9</clause>
         <where>1,2</where>
         <ptype>2</ptype>
@@ -440,7 +404,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>4</level>
         <clause>9</clause>
         <where>1,2</where>
         <ptype>1</ptype>
@@ -449,7 +413,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>4</level>
         <clause>9</clause>
         <where>1,2</where>
         <ptype>2</ptype>
@@ -458,7 +422,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>5</level>
         <clause>9</clause>
         <where>1,2</where>
         <ptype>4</ptype>
@@ -467,7 +431,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>4</level>
         <clause>9</clause>
         <where>1,2</where>
         <ptype>1</ptype>
@@ -476,7 +440,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>5</level>
         <clause>9</clause>
         <where>1</where>
         <ptype>2</ptype>
@@ -485,7 +449,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>5</level>
         <clause>9</clause>
         <where>1</where>
         <ptype>2</ptype>
@@ -494,7 +458,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>5</level>
         <clause>9</clause>
         <where>1</where>
         <ptype>1</ptype>
@@ -503,7 +467,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>5</level>
         <clause>9</clause>
         <where>1</where>
         <ptype>2</ptype>
@@ -514,7 +478,7 @@ Formats:
 
     <!-- Pre-WHERE derived table boundaries - e.g. "SELECT * FROM (SELECT column FROM table WHERE column LIKE '%$_REQUEST["name"]%') AS t1"-->
     <boundary>
-        <level>1</level>
+        <level>5</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>2</ptype>
@@ -523,7 +487,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>5</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>2</ptype>
@@ -532,7 +496,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>5</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>1</ptype>
@@ -541,7 +505,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>4</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>2</ptype>
@@ -550,7 +514,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>5</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>4</ptype>
@@ -559,7 +523,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>4</level>
         <clause>1</clause>
         <where>1,2</where>
         <ptype>1</ptype>
@@ -568,7 +532,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>4</level>
         <clause>1</clause>
         <where>1</where>
         <ptype>1</ptype>
@@ -577,7 +541,7 @@ Formats:
     </boundary>
 
     <boundary>
-        <level>1</level>
+        <level>5</level>
         <clause>1</clause>
         <where>1</where>
         <ptype>1</ptype>
@@ -588,7 +552,7 @@ Formats:
 
     <!-- AGAINST boolean full-text search boundaries (http://dev.mysql.com/doc/refman/5.5/en/fulltext-boolean.html) -->
     <boundary>
-        <level>1</level>
+        <level>4</level>
         <clause>1</clause>
         <where>1</where>
         <ptype>2</ptype>
