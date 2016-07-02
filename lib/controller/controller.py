@@ -21,6 +21,7 @@ from lib.controller.checks import heuristicCheckSqlInjection
 from lib.controller.checks import identifyWaf
 from lib.controller.checks import checkSsrf   # add
 from lib.controller.checks import checkCmd  #add
+from lib.controller.checks import checkCmd1
 from lib.core.agent import agent
 from lib.core.common import dataToStdout
 from lib.core.common import extractRegexResult
@@ -486,6 +487,7 @@ def start():
                             logger.info(infoMsg)
 
                         elif PAYLOAD.TECHNIQUE.BOOLEAN in conf.tech or conf.skipStatic:
+                            checkCmd1(place, parameter, value)
                             checkCmd(place, parameter, value)
                             checkSsrf(place, parameter, value)  #add  ssrf
                             check = checkDynParam(place, parameter, value)
