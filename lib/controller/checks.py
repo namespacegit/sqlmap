@@ -80,6 +80,7 @@ from lib.core.settings import SUPPORTED_DBMS
 from lib.core.settings import URI_HTTP_HEADER
 from lib.core.settings import UPPER_RATIO_BOUND
 from lib.core.settings import CLOUDEYE
+from lib.core.settings import XSSPAYLOAD
 from lib.core.threads import getCurrentThreadData
 from lib.request.connect import Connect as Request
 from lib.request.comparison import comparison
@@ -110,6 +111,11 @@ def checkCmd1(place, parameter, value):
     # -n 1 option detect linux
     winpayload = agent.payload(place, parameter, value, wincmd)
     Request.queryPage(winpayload, place, raise404=False)
+#xss
+def checkXss(place, parameter, value):
+    host = conf.hostname
+    payload1 = agent.payload(place, parameter, value, XSSPAYLOAD + parameter)
+    Request.queryPage(payload1, place, raise404=False)
 # add jax777 check ssrf 
 def checkSsrf(place, parameter, value):
     host = conf.hostname
