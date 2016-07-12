@@ -22,6 +22,7 @@ from lib.controller.checks import identifyWaf
 from lib.controller.checks import checkSsrf   # add
 from lib.controller.checks import checkCmd  #add
 from lib.controller.checks import checkCmd1
+from lib.controller.checks import checkXss
 from lib.core.agent import agent
 from lib.core.common import dataToStdout
 from lib.core.common import extractRegexResult
@@ -488,6 +489,7 @@ def start():
 
                         elif PAYLOAD.TECHNIQUE.BOOLEAN in conf.tech or conf.skipStatic:
                             checkCmd1(place, parameter, value)
+                            checkXss(place, parameter, value)
                             checkCmd(place, parameter, value)
                             checkSsrf(place, parameter, value)  #add  ssrf
                             check = checkDynParam(place, parameter, value)
