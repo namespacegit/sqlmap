@@ -114,8 +114,9 @@ def checkCmd1(place, parameter, value):
 #xss
 def checkXss(place, parameter, value):
     host = conf.hostname
-    payload1 = agent.payload(place, parameter, value, XSSPAYLOAD + parameter)
-    Request.queryPage(payload1, place, raise404=False)
+    for x in XSSPAYLOAD:
+        payload = agent.payload(place, parameter, value, x + parameter)
+        Request.queryPage(payload, place, raise404=False)
 # add jax777 check ssrf 
 def checkSsrf(place, parameter, value):
     host = conf.hostname

