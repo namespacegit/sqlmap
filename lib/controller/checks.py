@@ -124,10 +124,9 @@ def checkReflectXSS(place, parameter, value):
         _payload = agent.payload(place, parameter, newValue=payload, where=1)
         page, _ = Request.queryPage(_payload, place, content=True, raise404=False)
         try:
-            testpage = page.lower()
-            if 'alert(18567)>' in testpage or 'alert(18567)/>' in testpage:
+            if payload in page:
                 site = conf.hostname + "-----ReflectXSS"
-                info = "ReflectXSS: " + conf.url + "----->" + parameter
+                info = "ReflectXSS: " + conf.url + "----->" + parameter + "------>" + payload
                 mail(site, info)
                 break
         except:
@@ -135,7 +134,6 @@ def checkReflectXSS(place, parameter, value):
             traceback.print_exc(file=f)
             f.flush()
             f.close()
-
 
 # add check EL Expression
 def checkELE(place, parameter, value):
