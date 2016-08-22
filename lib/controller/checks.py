@@ -113,12 +113,7 @@ def mail(site,info):
         f.write(site+" : " + info + '\n')
         f.close()
 
-def checkcontenttype():
-    _,info = Request.queryPage(content=True, raise404=False)
-    if "tml" in info["content-type"]:
-        return True
-    else:
-        return False
+
 def checkReflectXSS(place, parameter, value):
     for payload in ReflectXSSPAYLOAD:
         _payload = agent.payload(place, parameter, newValue=payload, where=1)
