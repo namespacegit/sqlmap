@@ -25,7 +25,6 @@ from lib.controller.checks import checkCmd1
 from lib.controller.checks import checkXss
 from lib.controller.checks import checkELE
 from lib.controller.checks import checkReflectXSS
-from lib.controller.checks import checkcontenttype
 from lib.core.agent import agent
 from lib.core.common import dataToStdout
 from lib.core.common import extractRegexResult
@@ -492,8 +491,7 @@ def start():
                             logger.info(infoMsg)
 
                         elif PAYLOAD.TECHNIQUE.BOOLEAN in conf.tech or conf.skipStatic:
-                            if testxssflag:
-                                checkReflectXSS(place, parameter, value)
+                            checkReflectXSS(place, parameter, value)
                             checkCmd1(place, parameter, value)
                             checkXss(place, parameter, value)
                             checkCmd(place, parameter, value)
